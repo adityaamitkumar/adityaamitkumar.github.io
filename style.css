@@ -154,3 +154,153 @@ body{
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+
+/* =========================
+   MOBILE RESPONSIVE LAYOUT
+   ========================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        width: 100%;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 16px;
+        margin: 0;
+    }
+
+    #navbar ul #searchbar {
+        flex: 1 1 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #searchbar input,
+    #searchbar input[type="search"] {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .headcontainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 28px 16px 12px;
+        gap: 8px;
+    }
+
+    .headcontainer #logo {
+        padding-left: 0;
+    }
+
+    #logo {
+        max-width: 100%;
+    }
+
+    #logo h1 {
+        font-size: clamp(48px, 15vw, 72px);
+        text-align: center;
+        margin: 0;
+    }
+
+    #head {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    #head h1 {
+        font-size: clamp(42px, 13vw, 64px);
+        line-height: 0.98;
+        margin: 12px 0 18px;
+        overflow-wrap: anywhere;
+    }
+
+    #head p {
+        font-size: clamp(25px, 7vw, 34px);
+        line-height: 1.25;
+        margin: 12px auto 24px;
+        padding: 0 4px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .categories .tab {
+        flex: 1 1 130px;
+        min-width: 0;
+        max-width: 220px;
+        padding: 10px 12px;
+    }
+
+    #societies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .society-card {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+        padding: 16px;
+    }
+
+    .society-card img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+    .headcontainer #logo,
+    #head {
+        padding-left: 24px;
+    }
+
+    #head h1 {
+        font-size: clamp(56px, 9vw, 80px);
+    }
+
+    #head p {
+        font-size: clamp(30px, 5vw, 42px);
+    }
+
+    .society-card {
+        width: min(350px, calc(50% - 24px));
+    }
+}

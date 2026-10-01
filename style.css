@@ -154,11 +154,6 @@ body{
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-
-/* =========================
-   MOBILE RESPONSIVE LAYOUT
-   ========================= */
-
 *,
 *::before,
 *::after {

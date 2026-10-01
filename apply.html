@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NSUT Society recruitment application">
+    <title>Apply | NSUT Society Recruitment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <nav class="topbar">
+        <div class="nav-inner">
+            <a class="brand" href="main.html">NSUT<span>Societies</span></a>
+            <a id="back-link" href="main.html">← Society details</a>
+        </div>
+    </nav>
+
+    <main class="apply-page">
+        <section class="form-intro">
+            <div class="eyebrow">APPLICATION</div>
+            <h1>YOUR NEXT<br><span>CHAPTER.</span></h1>
+            <p>Tell us a little about yourself and why you want to be part of <strong id="apply-society">this society</strong>.</p>
+        </section>
+
+        <section class="form-card">
+            <form id="application-form" novalidate>
+                <div class="form-section">
+                    <div class="section-title">
+                        <span>01</span>
+                        <div>
+                            <h2>About you</h2>
+                            <p>Basic information so the society knows who is applying.</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="name">Full name <span>*</span></label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Aditya Kumar" required>
+                        <small class="error"></small>
+                    </div>
+
+                    <div class="two-col">
+                        <div class="field">
+                            <label for="year">Year <span>*</span></label>
+                            <select id="year" name="year" required>
+                                <option value="" selected disabled>Select year</option>
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                            </select>
+                            <small class="error"></small>
+                        </div>
+
+                        <div class="field">
+                            <label for="branch">Branch <span>*</span></label>
+                            <input id="branch" name="branch" type="text" placeholder="e.g. CSE" required>
+                            <small class="error"></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <span>02</span>
+                        <div>
+                            <h2>Your role</h2>
+                            <p>Choose the role you would like to apply for.</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="role">Open role <span>*</span></label>
+                        <select id="role" name="role" required>
+                            <option value="" selected disabled>Choose a role</option>
+                        </select>
+                        <small class="error"></small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <span>03</span>
+                        <div>
+                            <h2>Why you?</h2>
+                            <p>A short answer is enough. Be genuine rather than formal.</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="why">Why do you want to join? <span>*</span></label>
+                        <textarea id="why" name="why" rows="6" maxlength="500" placeholder="Tell us what interests you about this society, what you can contribute, or what you hope to learn..." required></textarea>
+                        <div class="textarea-footer">
+                            <small class="error"></small>
+                            <span id="counter">0 / 500</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="submit-btn" type="submit">
+                    Submit Application <span>→</span>
+                </button>
+                <p class="form-note">Demo application — no data is sent to a server. Submission is logged to the browser console.</p>
+            </form>
+
+            <div id="success-state" class="success-state" hidden>
+                <div class="success-icon">✓</div>
+                <div class="eyebrow">APPLICATION SENT</div>
+                <h2>You're on the list.</h2>
+                <p id="success-message"></p>
+                <div class="success-actions">
+                    <a id="success-details" class="submit-btn secondary" href="#">Back to society</a>
+                    <a class="text-link" href="main.html">View all societies</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="apply.js"></script>
+</body>
+</html>

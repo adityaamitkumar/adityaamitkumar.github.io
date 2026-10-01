@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=New+Amsterdam&display=swap');
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+body{
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul{
+    display:flex;
+    gap: 20px;
+    list-style-type: none;
+}
+#navbar ul #searchbar{
+    margin-left: auto;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#navbar ul{
+    padding-top: 10px;
+}
+
+#navbar{
+    background-color: #0d6efd;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.headcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headcontainer #logo{
+    padding-left: 100px;
+}
+
+#head{
+    padding-left: 100px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background-color: #333;
+
+    background-image: linear-gradient(to right, #0095ff, #f7f7fa, #3771ee);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    
+    display: inline-block;
+}
+
+#head h1{
+    font-family: 'New Amsterdam', sans-serif;
+    font-size: 100px;
+}
+
+#head p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.tab{
+    flex: 1;
+    padding: 12px;
+    border: none;
+}
+
+#societies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.society-card{
+    border: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
+    width: 350px;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+    background-color: antiqueWhite;
+    transition: background-color 0.5s ease;
+}
+
+.society-card img{
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.society-card .gradient-line{
+    width: 100%;
+    height: 8px;
+    
+    background: linear-gradient(to right, orange, yellow, red, yellow, orange);
+    
+    background-size: 200% 100%;
+    background-position: left center;
+    
+    transition: background-position 1s ease;
+    margin-bottom: 10px;
+}
+
+.society-card:hover .gradient-line{
+    background-position: right center;
+}
+
+.society-card:hover{
+    background-color: #2d2c35;
+    color: white;
+}
+
+.active{
+    border: none;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo h1{
+    font-size: 100px;
+    opacity:0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+

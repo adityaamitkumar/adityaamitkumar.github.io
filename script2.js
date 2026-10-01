@@ -11,7 +11,7 @@ if (!society) {
             <div class="section-label">404 — NOT FOUND</div>
             <h1 style="font-family:'New Amsterdam',sans-serif;font-size:4rem">Society not found</h1>
             <p style="color:#a9afb9">The society you're looking for doesn't exist in the sample data.</p>
-            <a class="apply-btn" href="main.html">← Back to societies</a>
+            <a class="apply-btn" href="index.html">← Back to societies</a>
         </section>
     `;
 } else {

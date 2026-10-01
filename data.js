@@ -5,7 +5,7 @@ const societies = [
         category: "Literary",
         color: "#198754",
         icon: "✍",
-        img: "TheAlliance.jpeg",
+        img: "assets/TheAlliance.jpeg",
         tagline: "Stories, perspectives and voices from across the NSUT community.",
         description: "NSUT's student-run newspaper connecting the campus community through news, features, interviews and student perspectives.",
         criteria: [
@@ -26,7 +26,7 @@ const societies = [
         category: "Literary",
         color: "#198754",
         icon: "🗣",
-        img: "Debsoc.png",
+        img: "assets/Debsoc.png",
         tagline: "Think critically. Speak clearly. Challenge ideas.",
         description: "The debating society develops articulate and analytical thinkers through debates, discussion forums, MUNs and workshops.",
         criteria: [
@@ -47,7 +47,7 @@ const societies = [
         category: "Technical",
         color: "#0d6efd",
         icon: "💻",
-        img: "IEEE.jpeg",
+        img: "assets/IEEE.jpeg",
         tagline: "Bridging technical knowledge with hands-on innovation.",
         description: "A student chapter focused on technical excellence, innovation and research through workshops, seminars, technical talks and practical sessions.",
         criteria: [
@@ -68,7 +68,7 @@ const societies = [
         category: "Technical",
         color: "#0d6efd",
         icon: "🤖",
-        img: "gdg.svg",
+        img: "assets/gdg.svg",
         tagline: "Learn, build and grow with fellow developers.",
         description: "Google Developer Group bringing together student developers for collaborative learning across web, mobile, machine learning, cloud and UI/UX.",
         criteria: [
@@ -89,7 +89,7 @@ const societies = [
         category: "Cultural",
         color: "#ffc107",
         icon: "🎭",
-        img: "ASHWAMEDH.jpg",
+        img: "assets/ASHWAMEDH.jpg",
         tagline: "Find your voice on stage.",
         description: "Dramatics and performing arts society creating opportunities to explore acting, dramatic expression, character development and stagecraft.",
         criteria: [
@@ -110,7 +110,7 @@ const societies = [
         category: "Cultural",
         color: "#ffc107",
         icon: "🎵",
-        img: "crescendo.jpg",
+        img: "assets/crescendo.jpg",
         tagline: "Where voices, instruments and ideas come together.",
         description: "The official music society of NSUT, bringing together vocalists, instrumentalists and music producers across diverse genres.",
         criteria: [
